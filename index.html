@@ -1,27 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Library</title>
-    </head>
-    <body>
-        <div id="wrapper">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+  <title>Library</title>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="wrapper">
+    <header></header>
 
-            <header>
+    <main>
+      
+      <section id="catalogue">
+        <h1>Catalogue</h1>
+        <div id="books"></div>
+        <button id="new-book-btn">NEW BOOK</button>
+      </section>
 
-            </header>
+      <section id="new-book-form" style="display: none;">
+        <h2>Have a book you'd like to add?</h2>
+        <form>
+          <label for="title">Title:*</label>
+          <input type="text" id="title" required />
 
-            <main>
-                <section></section>
-                <section></section>
-                <section></section>
-            </main>
+          <label for="author">Author:*</label>
+          <input type="text" id="author" required>
 
-            <footer>
+          <label for="pages">Pages:*</label>
+          <input type="number" id="pages" required>
 
-            </footer>
+        
+          
+          <div class="form-buttons">
+            <button type="submit">Submit</button>
+            <button type="button">Cancel</button>
+          </div>
+        </form>
+      </section>
+    </main>
 
-        </div>
-    </body>
+    <footer>
+        Copyright @ CompExpress 2025 
+    </footer>
+  </div>
+</body>
 </html>
